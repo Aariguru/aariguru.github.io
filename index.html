@@ -1,110 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aariguru Nadar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #0d47a1;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    .section {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section h2 {
-      color: #0d47a1;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    .project {
-      margin-bottom: 20px;
-    }
-
-    .project-title {
-      font-weight: 600;
-    }
-
-    a {
-      color: #0d47a1;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      background-color: #e3f2fd;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
   <header>
-    <h1>Aariguru Nadar</h1>
-    <p>Flutter | Java | Python | AI | Game Dev</p>
-    <p><a href="mailto:70458nss@gmail.com" style="color:white">70458nss@gmail.com</a></p>
+    <div class="container">
+      <h1>Aariguru Nadar</h1>
+      <p>AI & Flutter Developer | Game Developer | Computer Science Student</p>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>I’m a postgraduate passionate about development and emerging technologies. I specialize in Flutter for mobile apps, Java and Python for backend systems, and I explore AI-based solutions and game development using Godot.</p>
-  </section>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section class="section">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <div class="project-title">📦 E-commerce Grocery App</div>
-      <p>Multi-platform app built in Flutter using Firebase, Razorpay, and Local Storage. Supports separate admin/user apps.<br>
-        <a href="https://github.com/Aariguru/Aariguru-Nadar" target="_blank">View on GitHub</a>
-      </p>
-    </div>
-
-    <div class="project">
-      <div class="project-title">🎮 Godot Adventure RPG Game</div>
-      <p>2D RPG game using Godot and GDScript with state machines, player/enemy logic, and interactive NPCs.<br>
-        <a href="https://github.com/Aariguru/rpg_games" target="_blank">View on GitHub</a>
-      </p>
-    </div>
-
-    <div class="project">
-      <div class="project-title">🤖 AI Finance Tracker</div>
-      <p>Android-based AI app that tracks expenses, savings, and categorizes transactions intelligently using Python & ML.<br>
-        <em>Repo coming soon...</em>
-      </p>
+  <section id="projects" class="section">
+    <h2>🔥 Featured Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>🛒 Grocery Store App</h3>
+        <p>Flutter + Firebase, Razorpay. Clean MVC + Repository for scalability.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI Finance Tracker</h3>
+        <p>Android app with local storage. Privacy-first AI spending analysis.</p>
+      </div>
+      <div class="card">
+        <h3>🎮 2D RPG Game</h3>
+        <p>Godot with GDScript. Smooth movement, NPC logic, and modular scene structure.</p>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Languages & Tools</h2>
-    <p>Flutter, Dart, Java, Python, JavaScript, HTML, CSS, MongoDB, Firebase, MySQL, Godot, Node.js, Git, GitHub, Android Studio, VS Code</p>
+  <section id="skills" class="section dark">
+    <h2>🧠 Skills</h2>
+    <div class="skills-list">
+      <span>Flutter</span><span>Java</span><span>Python</span><span>Godot</span>
+      <span>Firebase</span><span>HTML</span><span>CSS</span><span>JS</span>
+      <span>MongoDB</span><span>Node.js</span><span>Git</span><span>Linux</span>
+      <span>Docker</span><span>Kotlin</span><span>Unity</span><span>C</span>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>🧾 Certifications</h2>
+    <ul class="cert-list">
+      <li>Java – Quantum Learning</li>
+      <li>Data Structures in Java – ALIET</li>
+      <li>Python & HTML/CSS – IIT Spoken Tutorial</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section dark">
+    <h2>📫 Contact</h2>
+    <p>Email: <a href="mailto:nadaraariguru@email.com">nadaraariguru@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/Aariguru" target="_blank">github.com/Aariguru</a></p>
   </section>
 
   <footer>
-    © 2025 Aariguru Nadar | Built with ❤ and GitHub Pages
+    <p>© 2025 Aariguru Nadar. Built with ❤</p>
   </footer>
 </body>
-
 </html>
