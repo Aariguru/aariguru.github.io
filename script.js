@@ -1,8 +1,12 @@
-document.getElementById("toggle-dark").addEventListener("click", function () {
-  document.body.classList.toggle("dark-mode");
-});
-
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Thank you! Your message has been submitted.");
+window.addEventListener('scroll', function () {
+  const cards = document.querySelectorAll('.project-card');
+  const trigger = window.innerHeight * 0.9;
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < trigger) {
+      card.classList.add('visible');
+    } else {
+      card.classList.remove('visible');
+    }
+  });
 });
