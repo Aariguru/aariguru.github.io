@@ -2,66 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aariguru Nadar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aariguru Nadar - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1 class="animate">Aariguru Nadar</h1>
-    <p class="tagline">Flutter | Java | Python | AI | Game Dev</p>
-    <button id="toggle-dark">🌗 Toggle Dark Mode</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Aariguru Nadar</h1>
+    <p>Full Stack Developer | Flutter & AI Enthusiast | Java | Python | Game Dev</p>
   </header>
 
-  <main>
-    <section class="about animate">
-      <h2>About Me</h2>
-      <p>I’m a postgraduate passionate about development and emerging technologies. I specialize in Flutter for mobile apps, Java and Python for backend systems, and I explore AI-based solutions and game development using Godot.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Aariguru Nadar, a passionate full stack developer skilled in Java, Python, JavaScript, HTML, CSS, Dart, and Flutter. I've built projects like e-commerce apps, games in Godot, and Android AI tools to track savings and expenses. I love building practical, user-focused applications and constantly strive to push the boundaries of technology.</p>
+    <p>I specialize in blending frontend interfaces with backend logic, and recently I’ve been exploring advanced AI integration for real-time data analysis. My interests also include computer vision and natural language processing to create smart, context-aware applications.</p>
 
-    <section class="projects animate">
-      <h2>Projects</h2>
+    <h3>Languages & Tools</h3>
+    <div class="tools-grid">
+      <i class="fab fa-java tools-icons" title="Java"></i>
+      <i class="fab fa-python tools-icons" title="Python"></i>
+      <i class="fab fa-js-square tools-icons" title="JavaScript"></i>
+      <i class="fab fa-html5 tools-icons" title="HTML5"></i>
+      <i class="fab fa-css3-alt tools-icons" title="CSS3"></i>
+      <i class="fab fa-google tools-icons" title="Flutter (Dart)"></i>
+      <i class="fas fa-robot tools-icons" title="AI Projects"></i>
+      <i class="fas fa-database tools-icons" title="Node.js / MongoDB"></i>
+      <i class="fas fa-gamepad tools-icons" title="Godot Engine"></i>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>📦 E-commerce Grocery App</h3>
-        <p>Flutter-based grocery shopping app using Firebase, Razorpay & Local DB.</p>
-        <a href="https://github.com/Aariguru/Aariguru-Nadar" target="_blank">View on GitHub</a>
-      </div>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>E-Commerce App (Flutter)</h3>
+      <p>A full-featured mobile e-commerce application built using Flutter and integrated with a Node.js backend. <a href="https://github.com/yourusername/flutter-ecommerce" target="_blank">View on GitHub</a></p>
+    </div>
+    <div class="project-card">
+      <h3>Godot Games</h3>
+      <p>Created action RPG-style games using Godot Engine and GDScript, with multiple levels, AI-driven enemies, and polished UI. <a href="https://github.com/yourusername/godot-rpg-game" target="_blank">View on GitHub</a></p>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A fully responsive, animated personal portfolio built with HTML, CSS, and JavaScript. Includes theme switching, form validation, and smooth animations. <a href="https://github.com/yourusername/portfolio-website" target="_blank">View on GitHub</a></p>
+    </div>
+    <div class="project-card">
+      <h3>AI Finance Tracker</h3>
+      <p>Coming soon</p>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>🎮 Godot RPG Game</h3>
-        <p>2D game using GDScript & state machines with AI enemies and NPCs.</p>
-        <a href="https://github.com/Aariguru/rpg_games" target="_blank">View on GitHub</a>
-      </div>
-
-      <div class="project">
-        <h3>🤖 AI Finance Tracker</h3>
-        <p>AI-based finance app to track and categorize transactions intelligently.</p>
-        <em>Repo coming soon...</em>
-      </div>
-    </section>
-
-    <section class="skills animate">
-      <h2>Languages & Tools</h2>
-      <p>Flutter, Dart, Java, Python, JavaScript, HTML, CSS, MongoDB, Firebase, MySQL, Godot, Node.js, Git, GitHub, Android Studio, VS Code</p>
-    </section>
-
-    <section class="contact animate">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); alert('Thanks! Your message was submitted (demo only).');">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© 2025 Aariguru Nadar | Built with ❤ & GitHub Pages</p>
+    <p>&copy; 2025 Aariguru Nadar. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
