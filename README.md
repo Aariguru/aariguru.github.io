@@ -12,7 +12,7 @@ This is my animated personal portfolio built using HTML, CSS, and JavaScript.
 
 ## Live Preview
 
-[Open the site](https://aariguru.github.io/portfolio)
+[Open the site](https://aariguru.github.io/)
 
 ## Tech Stack
 
